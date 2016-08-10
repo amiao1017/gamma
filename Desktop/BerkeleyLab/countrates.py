@@ -13,7 +13,7 @@ x = np.array(energy)
 # i = np.array((np.round(x)==1460).nonzero())[0]
 
 def countratehist(element,cutoff):
-	p1 = timestamp[(((cutoff[0]<x)&(x<cutoff[1]))|((1127<x)&(x<1137)))]
+	p1 = timestamp[((cutoff[0]<x)&(x<cutoff[1]))]
 	pmax1 = np.amax(p1)
 	pmin1 = np.amin(p1)
 	plt.figure()
